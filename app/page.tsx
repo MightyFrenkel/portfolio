@@ -1,3 +1,9 @@
+import Example from "./example.mdx";
+
 export default function Home() {
-  return <main>Welcome to my home page!</main>;
+  return (
+    <main>
+      <Example />
+    </main>
+  );
 }
