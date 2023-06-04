@@ -40,6 +40,18 @@
             }
           },
           {
+            "id": "c5bbc9a08208a616",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/nextjs-blog-with-obsidian.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "be88a583d24cfb96",
             "type": "leaf",
             "state": {
@@ -52,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -118,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/test.md",
+                "file": "blog/nextjs-blog-with-obsidian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/test.md",
+                "file": "blog/nextjs-blog-with-obsidian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/test.md"
+                "file": "blog/nextjs-blog-with-obsidian.md"
               }
             }
           }
@@ -176,14 +188,14 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "a14b53f34faa6915",
+  "active": "c5bbc9a08208a616",
   "lastOpenFiles": [
-    "blog/example-code.md",
     "blog/test.md",
+    "blog/nextjs-blog-with-obsidian.md",
+    "blog/example-code.md",
     "Excalidraw/Drawing 2023-06-04 13.55.45.excalidraw.md",
     "Excalidraw",
     "blog"

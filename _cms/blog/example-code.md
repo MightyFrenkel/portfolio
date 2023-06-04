@@ -6,7 +6,7 @@ description: This is the text in the overview
 Hello world
 
 ```ts
-const test = "hi"
+const test = "hi";
 
-console.log(test)
+console.log(test);
 ```

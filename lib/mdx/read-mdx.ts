@@ -17,13 +17,13 @@ export async function getPostBySlug(slug: string): Promise<Post> {
   const mdx = await getMdx(data);
 
   return {
-    mdx,
     elements: mdx.content,
     slug: realSlug,
     description: mdx.frontmatter.description,
     title: mdx.frontmatter.title,
   };
 }
+
 export async function getAllPosts(): Promise<Post[]> {
   const slugs = getPostSlugs();
   const posts: Post[] = [];
@@ -32,13 +32,4 @@ export async function getAllPosts(): Promise<Post[]> {
     posts.push(post);
   }
   return posts;
-}
-export async function generateStaticParams() {
-  const slugs = getPostSlugs();
-
-  return slugs.map((slug) => {
-    return {
-      slug,
-    };
-  });
 }

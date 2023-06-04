@@ -4,10 +4,9 @@ export default function BlogLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section className="w-full max-w-5xl mx-auto">
+    <section className="w-full max-w-4xl mx-auto">
       <div className="grid grid-cols-3 gap-4 w-full">
-        <div className="col-span-2">{children}</div>
-        <div className="col-span-1">Sidebar</div>
+        <div className="col-span-3">{children}</div>
       </div>
     </section>
   );
