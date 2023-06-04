@@ -1,5 +1,6 @@
 ---
 title: This is the title
+description: This is another description
 ---
 
 ## hi

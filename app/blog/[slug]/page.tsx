@@ -1,32 +1,24 @@
-import { getMdx } from "@/lib/mdx/render-mdx";
-import { getPostBySlug, getPostSlugs } from "@/lib/mdx/read-mdx";
+import { getAllPosts, getPostBySlug, getPostSlugs } from "@/lib/mdx/read-mdx";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
-  const slugs = getPostSlugs();
+  const posts = await getAllPosts();
 
-  return slugs.map((slug) => {
-    return {
-      slug,
-    };
-  });
+  return posts.map(({ slug }) => ({
+    slug,
+  }));
 }
 
-export default async function Page({
-  params,
-}: {
-  params: { slug: string; content: string };
-}) {
-  const slug = params?.slug;
+export default async function Page({ params }: { params: { slug: string } }) {
+  const { slug } = params;
 
-  const source = getPostBySlug(slug);
-  const { content, frontmatter } = await getMdx(source);
+  const { title, elements } = await getPostBySlug(slug).catch(() => {
+    notFound();
+  });
   return (
     <div>
-      <h1 className="text-2xl text-blue-800">The title: {frontmatter.title}</h1>
-      {content}
+      <h1 className="text-2xl text-blue-800">The title: {title}</h1>
+      {elements}
     </div>
   );
 }
-
-//https://github.com/vercel/next.js/tree/canary/examples/blog-starter

@@ -1,10 +1,12 @@
+import tailwindHighlightJS from "tailwind-highlightjs";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./mdx-components.tsx",
+    "./lib/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -15,7 +17,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwind-highlightjs")],
+  plugins: [tailwindHighlightJS],
   safelist: [
     {
       pattern: /hljs+/,
