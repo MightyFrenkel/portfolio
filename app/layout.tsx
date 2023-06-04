@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} min-h-screen`}>
         <Navbar items={NAVIGATION_ITEMS} />
-        {children}
+        <main className="w-full max-w-5xl mx-auto">{children}</main>
       </body>
     </html>
   );
