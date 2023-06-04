@@ -17,3 +17,5 @@ export const ComponentsConfig = {
     <pre {...props} className="rounded-lg border-2 border-zinc-500 p-4" />
   ),
 };
+
+export const CMS_PATH = "_cms/blog";

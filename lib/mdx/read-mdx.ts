@@ -1,9 +1,9 @@
 import { readFileSync, readdirSync } from "fs";
 import { join } from "path";
 import { getMdx } from "./compile-mdx";
-import { Post } from "./mdx-config";
+import { CMS_PATH, Post } from "./mdx-config";
 
-const postsDirectory = join(process.cwd(), "_posts");
+const postsDirectory = join(process.cwd(), CMS_PATH);
 
 export function getPostSlugs() {
   return readdirSync(postsDirectory);
