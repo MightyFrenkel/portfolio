@@ -10,12 +10,14 @@ export function BlogCard({
 }: BlogCardProps) {
   return (
     <Link
-      className="flex flex-col backdrop-blur-md bg-black/30 px-6 py-4 h-44 rounded-lg transition duration-200 ease-in-out transform hover:scale-105 hover:bg-black/50"
+      className="flex flex-col backdrop-blur-md bg-black/30 px-6 py-4 h-52 rounded-lg transition duration-200 ease-in-out transform hover:scale-105 hover:bg-black/50"
       key={slug}
       href={`/blog/${slug}`}
     >
       <Text.h3>{title}</Text.h3>
-      <Text.p>{description}</Text.p>
+      <div className="pt-4">
+        <Text.p>{description}</Text.p>
+      </div>
       <div className="mt-auto flex">
         <Text.p>Read more</Text.p>
         <div className="ml-auto">

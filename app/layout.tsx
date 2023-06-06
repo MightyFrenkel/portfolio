@@ -1,10 +1,7 @@
-import Link from "next/link";
 import "./globals.css";
-import { Inter } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { NAVIGATION_ITEMS } from "./config";
-
-const inter = Inter({ subsets: ["latin"] });
+import { roboto } from "@/components/fonts";
 
 export const metadata = {
   title: "Frank Hartman",
@@ -18,9 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen`}>
+      <body className={`${roboto.className} min-h-screen`}>
         <Navbar items={NAVIGATION_ITEMS} />
-        <main className="w-full max-w-5xl mx-auto">{children}</main>
+        {children}
       </body>
     </html>
   );

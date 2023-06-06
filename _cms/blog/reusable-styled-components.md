@@ -1,5 +1,5 @@
 ---
-title: hi
+title: Reusable styled components
 description: bye
 date: 2023-06-02
 ---

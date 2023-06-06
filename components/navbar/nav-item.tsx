@@ -1,4 +1,5 @@
 import Link, { LinkProps } from "next/link";
+import { roboto_mono } from "../fonts";
 
 export interface NavItemProps extends LinkProps {
   label: string;
@@ -6,13 +7,16 @@ export interface NavItemProps extends LinkProps {
 }
 
 const colors: Record<string, string> = {
-  orange: "text-orange-400",
+  orange: "text-clementine",
   white: "text-white",
 };
 
 export function NavItem({ label, color = "white", ...rest }: NavItemProps) {
   return (
-    <Link {...rest} className={`text-xl font-bold ${colors[color]}`}>
+    <Link
+      {...rest}
+      className={`${roboto_mono.className} text-xl font-bold ${colors[color]}`}
+    >
       {label}
     </Link>
   );
