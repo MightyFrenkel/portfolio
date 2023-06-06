@@ -16,7 +16,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
     notFound();
   });
   return (
-    <div className="px-4 py-4 mt-4 backdrop-blur-md bg-black/30 rounded-lg flex flex-col gap-12">
+    <div className="px-4 py-4 mt-4 backdrop-blur-md bg-black/50 rounded-lg flex flex-col gap-12">
       <h1 className="text-3xl font-bold pb-8">The title: {title}</h1>
       {elements}
     </div>

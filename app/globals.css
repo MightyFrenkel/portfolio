@@ -8,7 +8,7 @@
   --background-end-rgb: 30, 30, 30;
 }
 
-body {
+html {
   --s: 120px; /* control the size*/
   --c3: #2c2c41;
   --c2: #212134;
