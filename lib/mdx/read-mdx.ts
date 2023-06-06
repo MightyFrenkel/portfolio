@@ -21,6 +21,7 @@ export async function getPostBySlug(slug: string): Promise<Post> {
     slug: realSlug,
     description: mdx.frontmatter.description,
     title: mdx.frontmatter.title,
+    date: mdx.frontmatter.date,
   };
 }
 
@@ -31,5 +32,5 @@ export async function getAllPosts(): Promise<Post[]> {
     const post = await getPostBySlug(slug);
     posts.push(post);
   }
-  return posts;
+  return posts.sort((a, b) => (a.date > b.date ? -1 : 1));
 }
