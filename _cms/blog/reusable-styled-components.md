@@ -1,6 +1,6 @@
 ---
-title: Reusable styled components
-description: bye
+title: Reuse tailwindCss text components like a pro
+description: When styling code with TailwindCSS it often becomes difficult to manage. Here I purpose a way to fix this.
 date: 2023-06-02
 ---
 
