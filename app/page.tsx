@@ -5,10 +5,8 @@ import { getAllPosts } from "@/lib/mdx/read-mdx";
 export default async function Home() {
   const posts = await getAllPosts();
   return (
-    <main>
-      <Section>
-        <BlogOverview posts={posts} />
-      </Section>
-    </main>
+    <Section>
+      <BlogOverview posts={posts} />
+    </Section>
   );
 }

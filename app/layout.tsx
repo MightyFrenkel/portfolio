@@ -2,6 +2,7 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { NAVIGATION_ITEMS } from "./config";
 import { roboto } from "@/components/fonts";
+import { Footer } from "@/components/footer";
 
 export const metadata = {
   title: "Frank Hartman",
@@ -15,9 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} min-h-screen`}>
+      <body className={`${roboto.className} min-h-screen flex flex-col`}>
         <Navbar items={NAVIGATION_ITEMS} />
-        {children}
+        <main className="flex-grow">{children}</main>
+        <Footer />
       </body>
     </html>
   );

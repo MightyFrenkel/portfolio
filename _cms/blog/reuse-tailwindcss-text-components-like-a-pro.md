@@ -86,7 +86,7 @@ Now, we can use specific presets on the `Text` component like this:
 
 ```tsx
 export function SomeComponent() {
-  return <Text.h1>Hello world</Text>;
+  return <Text.h1>Hello world</Text.h1>;
 }
 ```
 
