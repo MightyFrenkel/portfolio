@@ -3,6 +3,8 @@ import { Navbar } from "@/components/navbar";
 import { NAVIGATION_ITEMS } from "./config";
 import { roboto } from "@/components/fonts";
 import { Footer } from "@/components/footer";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Html } from "@/components/html";
 
 export const metadata = {
   title: "Frank Hartman",
@@ -15,12 +17,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${roboto.className} min-h-screen flex flex-col`}>
-        <Navbar items={NAVIGATION_ITEMS} />
-        <main className="flex-grow">{children}</main>
-        <Footer />
-      </body>
-    </html>
+    <ThemeProvider>
+      <Html>
+        <body className={`${roboto.className} min-h-screen flex flex-col`}>
+          <Navbar items={NAVIGATION_ITEMS} />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </body>
+      </Html>
+    </ThemeProvider>
   );
 }

@@ -10,7 +10,7 @@ export function BlogCard({
 }: BlogCardProps) {
   return (
     <Link
-      className="flex flex-col backdrop-blur-md bg-black/30 px-6 py-4 h-52 rounded-lg transition duration-200 ease-in-out transform hover:scale-105 hover:bg-black/50"
+      className="flex flex-col backdrop-blur-md bg-white/50 dark:bg-black/30 px-6 py-4 h-52 rounded-lg transition-transform duration-200 ease-in-out transform lg:hover:scale-105 "
       key={slug}
       href={`/blog/${slug}`}
     >

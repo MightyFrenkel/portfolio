@@ -3,14 +3,24 @@
 @tailwind utilities;
 
 :root {
+  --text-color: 5, 5, 5;
+  --bg-c3: #f5f5f5;
+  --bg-c2: #e5e5e5;
+  --bg-c1: #d5d5d5;
+}
+
+:root.dark {
   --text-color: 250, 250, 250;
+  --bg-c3: #2c2c41;
+  --bg-c2: #212134;
+  --bg-c1: #1c1c2b;
 }
 
 html {
   --s: 120px; /* control the size*/
-  --c3: #2c2c41;
-  --c2: #212134;
-  --c1: #1c1c2b;
+  --c3: var(--bg-c3);
+  --c2: var(--bg-c2);
+  --c1: var(--bg-c1);
 
   --_g: var(--c3) 0 120deg, #0000 0;
   background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)),

@@ -1,6 +1,7 @@
 import { NavigationItem } from "@/app/config";
 import { NavItem } from "./nav-item";
 import { Logo } from "../logo";
+import { DarkModeSwitch } from "../dark-mode-switch/dark-mode-switch";
 
 export interface NavbarProps {
   items: NavigationItem[];
@@ -8,7 +9,7 @@ export interface NavbarProps {
 
 export function Navbar({ items }: NavbarProps) {
   return (
-    <nav className="bg-zinc-900 px-4 flex">
+    <nav className="bg-zinc-100 dark:bg-zinc-900 px-4 flex">
       <div className="flex items-center justify-between w-full max-w-5xl mx-auto py-4">
         <div className="flex items-center">
           <Logo />
@@ -17,6 +18,8 @@ export function Navbar({ items }: NavbarProps) {
           {items.map(({ label, href }) => (
             <NavItem key={label} label={label} href={href} />
           ))}
+
+          <DarkModeSwitch />
         </div>
       </div>
     </nav>
