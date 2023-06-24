@@ -16,7 +16,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     localStorage.setItem("isDarkMode", String(isDarkMode));
     document.documentElement.classList.toggle("dark", isDarkMode);
-    console.log("isDarkMode", isDarkMode);
   }, [isDarkMode]);
 
   const context = useMemo(
