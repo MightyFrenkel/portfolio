@@ -1,3 +1,4 @@
+import { SandPack } from "@/components/sandpack";
 import { Text } from "@/components/text";
 
 export interface FrontMatterFields {
@@ -20,6 +21,7 @@ export const ComponentsConfig = {
   pre: (props: any) => (
     <pre {...props} className="rounded-lg border-2 border-zinc-700 " />
   ),
+  Sandpack: (props: any) => <SandPack {...props} />,
 };
 
 export const CMS_PATH = "_cms/blog";

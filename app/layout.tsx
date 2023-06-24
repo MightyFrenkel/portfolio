@@ -4,6 +4,7 @@ import { NAVIGATION_ITEMS } from "./config";
 import { roboto } from "@/components/fonts";
 import { Footer } from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import { SandPackCSS } from "@/components/sandpack";
 
 export const metadata = {
   title: "Frank Hartman",
@@ -17,6 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <SandPackCSS />
+      </head>
       <ThemeProvider>
         <body className={`${roboto.className} min-h-screen flex flex-col`}>
           <Navbar items={NAVIGATION_ITEMS} />
