@@ -1,12 +1,25 @@
-"use client";
+import Script from "next/script";
 
-import { useContext } from "react";
-import { ThemeContext } from "./theme-provider";
+const setInitialTheme = `
+(function() {
+  function getInitialTheme() {
+    const isDarkMode = window.localStorage.getItem('isDarkMode');
+    return isDarkMode === 'true' ? 'dark' : 'light';
+  }
+  const theme = getInitialTheme();
+  document.documentElement.classList.add(theme);
+})();
+    `;
 
 export function Html({ children }: { children: React.ReactNode }) {
-  const { isDarkMode } = useContext(ThemeContext);
   return (
-    <html lang="en" className={isDarkMode ? "dark" : "light"}>
+    <html lang="en">
+      <Script
+        id="dark-mode"
+        dangerouslySetInnerHTML={{
+          __html: setInitialTheme,
+        }}
+      ></Script>
       {children}
     </html>
   );

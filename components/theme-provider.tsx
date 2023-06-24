@@ -1,6 +1,7 @@
 "use client";
 
-import { createContext, useEffect, useState } from "react";
+import { isBrowser } from "framer-motion";
+import { createContext, useEffect, useMemo, useState } from "react";
 
 export const ThemeContext = createContext({
   isDarkMode: false,
@@ -8,18 +9,26 @@ export const ThemeContext = createContext({
 });
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(
+    isBrowser && localStorage.getItem("isDarkMode") === "true"
+  );
+
   useEffect(() => {
-    setIsDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches);
-  }, []);
+    localStorage.setItem("isDarkMode", String(isDarkMode));
+    document.documentElement.classList.toggle("dark", isDarkMode);
+  }, [isDarkMode]);
+
+  const context = useMemo(
+    () => ({
+      isDarkMode,
+      toggleDarkMode: () => {
+        setIsDarkMode((prev) => !prev);
+      },
+    }),
+    [isDarkMode]
+  );
+
   return (
-    <ThemeContext.Provider
-      value={{
-        isDarkMode,
-        toggleDarkMode: () => setIsDarkMode((prev) => !prev),
-      }}
-    >
-      {children}
-    </ThemeContext.Provider>
+    <ThemeContext.Provider value={context}>{children}</ThemeContext.Provider>
   );
 }
