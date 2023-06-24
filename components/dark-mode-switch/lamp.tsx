@@ -8,9 +8,11 @@ export interface LampProps {
 export function Lamp({ toggleLamp, isOn }: LampProps) {
   return (
     <button
-      style={{
-        scale: isOn ? 1.5 : 1.2,
-      }}
+      style={
+        {
+          // scale: isOn ? 1.5 : 1.2,
+        }
+      }
       onClick={toggleLamp}
       className="w-4 h-4"
     >
