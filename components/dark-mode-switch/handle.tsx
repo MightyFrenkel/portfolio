@@ -38,7 +38,7 @@ export function Handle({ toggleLamp }: HandleProps) {
         onDrag={onDrag}
         onTapStart={onDragStart}
         onDragEnd={onDragEnd}
-        className="absolute left-0 w-8 h-8 rounded-full cursor-pointer border-4 shadow-lg border-red-500 bg-black/50"
+        className="absolute left-0 w-8 h-8 rounded-full cursor-pointer border-4 shadow-lg border-yellow-700 bg-black/10"
         whileHover={{ scale: 1.4 }}
         whileTap={{ scale: 1.2 }}
         dragSnapToOrigin
