@@ -1,5 +1,6 @@
 import { SandPack } from "@/components/sandpack";
 import { Text } from "@/components/text";
+import { HTMLAttributes } from "react";
 
 export interface FrontMatterFields {
   title: string;
@@ -12,16 +13,16 @@ export interface Post extends FrontMatterFields {
   elements: React.ReactElement;
 }
 
+type TextType = HTMLAttributes<HTMLElement>;
+
 export const ComponentsConfig = {
-  h1: (props: any) => <Text.h1 {...props} />,
-  h2: (props: any) => <Text.h2 {...props} />,
-  h3: (props: any) => <Text.h3 {...props} />,
-  p: (props: any) => <Text.p {...props} />,
-  ul: (props: any) => <ul className="list-disc list-inside py-2" {...props} />,
-  pre: (props: any) => (
+  h1: (props: TextType) => <Text.h1 {...props} />,
+  h2: (props: TextType) => <Text.h2 {...props} />,
+  h3: (props: TextType) => <Text.h3 {...props} />,
+  pre: (props: TextType) => (
     <pre {...props} className="rounded-lg border-2 border-zinc-700 " />
   ),
-  Sandpack: (props: any) => <SandPack {...props} />,
+  Sandpack: (props: TextType) => <SandPack {...props} />,
 };
 
 export const CMS_PATH = "_cms/blog";

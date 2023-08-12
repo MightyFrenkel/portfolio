@@ -1,4 +1,5 @@
 import tailwindHighlightJS from "tailwind-highlightjs";
+import tailwindTypography from "@tailwindcss/typography";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -8,7 +9,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./lib/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  plugins: [tailwindHighlightJS],
+  plugins: [tailwindHighlightJS, tailwindTypography],
   safelist: [
     {
       pattern: /hljs+/,

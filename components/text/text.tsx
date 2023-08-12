@@ -1,16 +1,16 @@
-import React from "react";
+import React, { HTMLAttributes } from "react";
 import { roboto_mono } from "../fonts";
 
 type TextElement = "h1" | "h2" | "h3" | "h4" | "p";
+type TextType = HTMLAttributes<HTMLElement>;
 
-export interface TextProps {
+export interface TextProps extends HTMLAttributes<HTMLHeadingElement> {
   tag: TextElement;
-  children: React.ReactNode;
 }
 
 const textStyles: Record<
   TextElement,
-  ({ children }: { children: React.ReactNode }) => React.ReactNode
+  ({ children }: TextType) => React.ReactNode
 > = {
   h1: (props) => (
     <h1 className={`${roboto_mono.className} text-4xl font-bold`} {...props} />
@@ -36,25 +36,18 @@ const textStyles: Record<
   p: (props) => <p className="text-lg font-light" {...props} />,
 };
 
-export const Text = ({ tag, children }: TextProps) => {
+export const Text = ({ tag, children, ...props }: TextProps) => {
   const Element = textStyles[tag];
-  return <Element>{children}</Element>;
+
+  return <Element {...props}>{children}</Element>;
 };
 
-Text.h1 = (props: { children: React.ReactNode }) => (
-  <Text tag="h1" {...props} />
-);
+Text.h1 = (props: TextType) => <Text tag="h1" {...props} />;
 
-Text.h2 = (props: { children: React.ReactNode }) => (
-  <Text tag="h2" {...props} />
-);
+Text.h2 = (props: TextType) => <Text tag="h2" {...props} />;
 
-Text.h3 = (props: { children: React.ReactNode }) => (
-  <Text tag="h3" {...props} />
-);
+Text.h3 = (props: TextType) => <Text tag="h3" {...props} />;
 
-Text.h4 = (props: { children: React.ReactNode }) => (
-  <Text tag="h4" {...props} />
-);
+Text.h4 = (props: TextType) => <Text tag="h4" {...props} />;
 
-Text.p = (props: { children: React.ReactNode }) => <Text tag="p" {...props} />;
+Text.p = (props: TextType) => <Text tag="p" {...props} />;
