@@ -3,7 +3,6 @@ import { Navbar } from "@/components/navbar";
 import { NAVIGATION_ITEMS } from "./config";
 import { roboto } from "@/components/fonts";
 import { Footer } from "@/components/footer";
-import { ThemeProvider } from "@/components/theme-provider";
 import { SandPackCSS } from "@/components/sandpack";
 
 export const metadata = {
@@ -21,13 +20,11 @@ export default function RootLayout({
       <head>
         <SandPackCSS />
       </head>
-      <ThemeProvider>
-        <body className={`${roboto.className} min-h-screen flex flex-col`}>
-          <Navbar items={NAVIGATION_ITEMS} />
-          <main className="flex-grow">{children}</main>
-          <Footer />
-        </body>
-      </ThemeProvider>
+      <body className={`${roboto.className} min-h-screen flex flex-col`}>
+        <Navbar items={NAVIGATION_ITEMS} />
+        <main className="flex-grow">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

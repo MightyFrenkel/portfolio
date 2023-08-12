@@ -5,7 +5,7 @@ export const Section = ({ children }: { children: React.ReactNode }) => (
 );
 
 const Background = ({ children }: { children: React.ReactNode }) => (
-  <div className=" px-2 md:px-8 py-4 pt-8 backdrop-blur-md bg-white/90 dark:bg-black/30 rounded-lg flex flex-col gap-12 ">
+  <div className=" px-2 md:px-8 py-4 pt-8 backdrop-blur-md bg-black/30 rounded-lg flex flex-col gap-12 ">
     {children}
   </div>
 );
