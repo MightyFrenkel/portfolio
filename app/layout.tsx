@@ -19,6 +19,12 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <SandPackCSS />
+
+        <script
+          async
+          data-id="101423665"
+          src="//static.getclicky.com/js"
+        ></script>
       </head>
       <body className={`${roboto.className} min-h-screen flex flex-col`}>
         <Navbar items={NAVIGATION_ITEMS} />
