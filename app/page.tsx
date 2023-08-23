@@ -17,8 +17,10 @@ export default async function Home() {
         <br />
         <Text.p>- Frank</Text.p>
       </Section>
-      <Section>
-        <Text.h2>Blog</Text.h2>
+      <Section spacing="none">
+        <div className="px-3">
+          <Text.h2>Blog</Text.h2>
+        </div>
 
         <BlogOverview posts={posts} />
       </Section>

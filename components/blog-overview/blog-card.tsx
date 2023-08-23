@@ -10,7 +10,7 @@ export function BlogCard({
 }: BlogCardProps) {
   return (
     <Link
-      className="flex flex-col backdrop-blur-md bg-black/30 px-6 py-4 h-52 rounded-lg transition-transform duration-200 ease-in-out transform lg:hover:scale-105 "
+      className="flex flex-col backdrop-blur-md bg-black/30 px-3 md:px-6 py-4 min-h-[13rem] rounded-lg"
       key={slug}
       href={`/blog/${slug}`}
     >
@@ -18,7 +18,7 @@ export function BlogCard({
       <div className="pt-4">
         <Text.p>{description}</Text.p>
       </div>
-      <div className="mt-auto flex">
+      <div className="mt-auto flex pt-2">
         <Text.p>Read more</Text.p>
         <div className="ml-auto">
           <Text.p>{date.toDateString()}</Text.p>

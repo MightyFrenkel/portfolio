@@ -17,7 +17,7 @@ const textStyles: Record<
   ),
   h2: (props) => (
     <h2
-      className={`${roboto_mono.className} text-3xl font-bold text-clementine`}
+      className={`${roboto_mono.className}  text-3xl font-bold text-clementine`}
       {...props}
     />
   ),

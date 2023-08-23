@@ -20,7 +20,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
   return (
     <>
       <Header title={title} date={date} />
-      <Section>
+      <Section spacing="none">
         <Section.Background>
           <div className="flex">
             <article className="prose prose-lg prose-invert max-w-none w-full md:w-2/3">
