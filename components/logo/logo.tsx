@@ -1,5 +1,5 @@
+import { roboto_mono } from "@/config/fonts";
 import Link from "next/link";
-import { roboto_mono } from "./fonts";
 
 export function Logo() {
   return (

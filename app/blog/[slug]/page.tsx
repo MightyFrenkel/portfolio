@@ -1,6 +1,6 @@
-import { Header } from "@/components/blog-overview/blog-header";
+import { Header } from "@/components/blog/blog-header";
 import { Section } from "@/components/section";
-import { getAllPosts, getPostBySlug } from "@/lib/mdx/read-mdx";
+import { getAllPosts, getPostBySlug } from "@/utils/mdx/read-mdx";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {

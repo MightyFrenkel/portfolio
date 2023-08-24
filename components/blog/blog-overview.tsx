@@ -1,4 +1,4 @@
-import { Post } from "@/lib/mdx/mdx-config";
+import { Post } from "@/utils/mdx/mdx-config";
 import { BlogCard } from "./blog-card";
 
 export interface BlogOverviewProps {

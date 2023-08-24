@@ -1,7 +1,7 @@
-import { BlogOverview } from "@/components/blog-overview";
+import { BlogOverview } from "@/components/blog";
 import { Section } from "@/components/section";
 import { Text } from "@/components/text";
-import { getAllPosts } from "@/lib/mdx/read-mdx";
+import { getAllPosts } from "@/utils/mdx/read-mdx";
 
 export default async function Home() {
   const posts = await getAllPosts();

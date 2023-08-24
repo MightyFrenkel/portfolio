@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { NAVIGATION_ITEMS } from "./config";
-import { roboto } from "@/components/fonts";
+import { roboto } from "@/config/fonts";
 import { Footer } from "@/components/footer";
 import { SandPackCSS } from "@/components/sandpack";
 
