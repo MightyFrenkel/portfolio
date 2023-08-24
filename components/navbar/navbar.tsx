@@ -1,6 +1,6 @@
-import { NavigationItem } from "@/app/config";
 import { NavItem } from "./nav-item";
 import { Logo } from "../logo/logo";
+import { NavigationItem } from "@/config/navigation-config";
 
 export interface NavbarProps {
   items: NavigationItem[];

@@ -1,9 +1,9 @@
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
-import { NAVIGATION_ITEMS } from "./config";
-import { roboto } from "@/config/fonts";
+import { roboto } from "@/config/fonts-config";
 import { Footer } from "@/components/footer";
 import { SandPackCSS } from "@/components/sandpack";
+import { NAVIGATION_ITEMS } from "@/config/navigation-config";
 
 export const metadata = {
   title: "Frank Hartman",

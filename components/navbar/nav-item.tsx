@@ -1,4 +1,4 @@
-import { roboto_mono } from "@/config/fonts";
+import { roboto_mono } from "@/config/fonts-config";
 import Link, { LinkProps } from "next/link";
 
 export interface NavItemProps extends LinkProps {

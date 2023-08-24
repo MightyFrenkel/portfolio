@@ -1,4 +1,4 @@
-import { roboto_mono } from "@/config/fonts";
+import { roboto_mono } from "@/config/fonts-config";
 import { TextElement, TextType } from "./types";
 
 export const TEXT_STYLES: Record<
