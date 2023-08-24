@@ -7,7 +7,6 @@ import {
   getSandpackCssText,
 } from "@codesandbox/sandpack-react";
 import { useServerInsertedHTML } from "next/navigation";
-import { use, useEffect, useState } from "react";
 
 /**
  * Ensures CSSinJS styles are loaded server side.

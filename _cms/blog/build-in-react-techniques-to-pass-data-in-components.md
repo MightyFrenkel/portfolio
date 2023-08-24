@@ -24,7 +24,7 @@ First I will give a quick overview which technique to use when, afterwards we wi
 	- When to use: When you need to render a component outside its parent's DOM hierarchy, such as modals or overlays.
 	- When not to use: When rendering a component within the parent's DOM hierarchy is sufficient and there's no need to break out of the component tree structure.
 
-### React Props
+## React Props
 
 ```tsx
 // ParentComponent.tsx
@@ -67,7 +67,7 @@ export const ChildComponent = ({ name }: Props) => {
 
 The `ChildComponent` receives the `name` prop and renders a greeting message using the received name.
 
-### Context API and Providers
+## Context API and Providers
 First, we'll create a context to hold the data. Create a new file called `MyContext.tsx`:
 
 ```tsx
@@ -134,7 +134,7 @@ const ChildComponent = () => {
 
 In the `ChildComponent`, we import the `useContext` hook from React and pass in the `MyContext` to retrieve the context data. The `contextValue` will contain the value provided by the `MyContext.Provider` in the parent component.
 
-### React portals
+## React portals
 ```tsx
 import { useState } from 'react';
 import { createPortal } from 'react-dom';

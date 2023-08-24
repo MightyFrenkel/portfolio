@@ -23,7 +23,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
       <Section spacing="none">
         <Section.Background>
           <div className="flex">
-            <article className="prose prose-lg prose-invert max-w-none w-full md:w-2/3">
+            <article className="prose prose-lg prose-table:table-fixed prose-invert max-w-none w-full md:w-2/3">
               {elements}
             </article>
             <aside className="hidden md:block w-1/3 ml-8">
