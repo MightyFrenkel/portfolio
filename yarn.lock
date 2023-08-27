@@ -4734,28 +4734,6 @@ __metadata:
 "portfolio@workspace:.":
   version: 0.0.0-use.local
   resolution: "portfolio@workspace:."
-  dependencies:
-    "@codesandbox/sandpack-react": ^2.6.9
-    "@tailwindcss/typography": ^0.5.9
-    "@types/node": 20.2.5
-    "@types/react": 18.2.8
-    "@types/react-dom": 18.2.4
-    autoprefixer: 10.4.14
-    eslint: 8.42.0
-    eslint-config-next: 13.4.4
-    highlight.js: ^11.8.0
-    next: 13.4.4
-    next-mdx-remote: ^4.4.1
-    postcss: 8.4.24
-    react: 18.2.0
-    react-dom: 18.2.0
-    react-use: ^17.4.0
-    rehype-highlight: ^6.0.0
-    rehype-slug: ^5.1.0
-    remark-gfm: ^3.0.1
-    tailwind-highlightjs: ^2.0.1
-    tailwindcss: 3.3.2
-    typescript: 5.1.3
   languageName: unknown
   linkType: soft
 
@@ -6237,6 +6215,34 @@ __metadata:
   checksum: 95bafa4c04fa2f685a86ca1000069c1ec43ace1f8776c10f226a73296caeddd83f893db885c2c220ebeb6c52d424e3b54d7c0c1e963bbf204038ff1a944fbb07
   languageName: node
   linkType: hard
+
+"web@workspace:packages/web":
+  version: 0.0.0-use.local
+  resolution: "web@workspace:packages/web"
+  dependencies:
+    "@codesandbox/sandpack-react": ^2.6.9
+    "@tailwindcss/typography": ^0.5.9
+    "@types/node": 20.2.5
+    "@types/react": 18.2.8
+    "@types/react-dom": 18.2.4
+    autoprefixer: 10.4.14
+    eslint: 8.42.0
+    eslint-config-next: 13.4.4
+    highlight.js: ^11.8.0
+    next: 13.4.4
+    next-mdx-remote: ^4.4.1
+    postcss: 8.4.24
+    react: 18.2.0
+    react-dom: 18.2.0
+    react-use: ^17.4.0
+    rehype-highlight: ^6.0.0
+    rehype-slug: ^5.1.0
+    remark-gfm: ^3.0.1
+    tailwind-highlightjs: ^2.0.1
+    tailwindcss: 3.3.2
+    typescript: 5.1.3
+  languageName: unknown
+  linkType: soft
 
 "webidl-conversions@npm:^3.0.0":
   version: 3.0.1

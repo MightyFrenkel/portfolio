@@ -25,4 +25,4 @@ export const ComponentsConfig = {
   Sandpack: (props: TextType) => <SandPack {...props} />,
 };
 
-export const CMS_PATH = "_cms/blog";
+export const CMS_PATH = "../../_cms/blog";
