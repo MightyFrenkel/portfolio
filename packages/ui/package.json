@@ -3,13 +3,23 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/af-ui.umd.cjs",
+  "module": "./dist/af-ui.js",
+  "types": "./dist/af-ui.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/af-ui.js",
+      "require": "./dist/af-ui.umd.cjs"
+    }
+  },
   "scripts": {
-    "dev": "vite",
+    "dev": "yarn storybook",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook": "storybook dev -p 6006"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -36,6 +46,7 @@
     "eslint-plugin-storybook": "^0.6.13",
     "storybook": "^7.3.2",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.5.2"
   }
 }

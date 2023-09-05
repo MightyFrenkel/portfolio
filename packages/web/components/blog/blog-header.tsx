@@ -1,4 +1,4 @@
-import { Text } from "@/components/text";
+import { Text } from "@actuallyfrank/ui";
 
 export interface HeaderProps {
   title: string;

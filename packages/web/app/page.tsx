@@ -1,6 +1,6 @@
 import { BlogOverview } from "@/components/blog";
 import { Section } from "@/components/section";
-import { Text } from "@/components/text";
+import { Text } from "@actuallyfrank/ui";
 import { getAllPosts } from "@/utils/mdx/read-mdx";
 
 export default async function Home() {
@@ -8,18 +8,18 @@ export default async function Home() {
   return (
     <>
       <Section>
-        <Text.h2>Hi, I&apos;m a developer :)</Text.h2>
+        <Text tag="h2">Hi, I&apos;m a developer :)</Text>
         <br />
-        <Text.p>
+        <Text tag="p">
           Consider this website a work in progress, but feel free to have a look
           around while I am working on it!
-        </Text.p>
+        </Text>
         <br />
-        <Text.p>- Frank</Text.p>
+        <Text tag="p">- Frank</Text>
       </Section>
       <Section spacing="none">
         <div className="px-3">
-          <Text.h2>Blog</Text.h2>
+          <Text tag="h2">Blog</Text>
         </div>
 
         <BlogOverview posts={posts} />

@@ -1,6 +1,6 @@
 import { Post } from "@/utils/mdx/mdx-config";
 import Link from "next/link";
-import { Text } from "../text";
+import { Text } from "@actuallyfrank/ui";
 
 export interface BlogCardProps {
   post: Post;

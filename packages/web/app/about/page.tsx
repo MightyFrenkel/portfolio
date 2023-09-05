@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Section } from "@/components/section";
-import { Text } from "@/components/text";
+import { Text } from "@actuallyfrank/ui";
 
 export default function AboutPage() {
   return (

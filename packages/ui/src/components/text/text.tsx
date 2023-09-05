@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from "react";
+import { HTMLAttributes } from "react";
 import { TEXT_STYLES } from "./config";
 
 type TextElement = "h1" | "h2" | "h3" | "h4" | "p";
