@@ -36,3 +36,5 @@ next-env.d.ts
 .yarn
 packages/web/.next
 packages/web/node_modules
+apps/web/.next
+apps/web/node_modules

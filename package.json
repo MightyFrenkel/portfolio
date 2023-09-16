@@ -2,14 +2,9 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
-    "dev": "yarn workspace @actuallyfrank/web dev",
-    "dev:ui": "yarn workspace @actuallyfrank/ui storybook",
-    "build": "yarn workspace @actuallyfrank/web build",
-    "start": "yarn workspace @actuallyfrank/web start"
-  },
-  "packageManager": "yarn@3.6.3"
+    "dev": "pnpm --stream --parallel -r run dev",
+    "build": "pnpm --stream -r run build",
+    "start": "pnpm --filter @actuallyfrank/web start"
+  }
 }
