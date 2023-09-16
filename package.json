@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "pnpm --stream --parallel -r run dev",
     "build": "pnpm --stream -r run build",
-    "start": "pnpm --filter @actuallyfrank/web start"
+    "start": "pnpm --filter @actuallyfrank/web start",
+    "lint": "pnpm --stream -r run lint"
   }
 }
