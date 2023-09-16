@@ -14,6 +14,6 @@ export async function getMdx(source: string) {
         remarkPlugins: [remarkGfm],
       },
     },
-    components: ComponentsConfig as any,
+    components: ComponentsConfig,
   });
 }
