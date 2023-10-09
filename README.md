@@ -1,11 +1,7 @@
-Repo for my personal website [https://actuallyfrank.io](actuallyfrank).
+Hi there 👋
 
-## Getting Started
+I'm Frank, not just Frank, actually Frank.
 
-First, run the development server:
+A software engineer and web developer from the Netherlands🇳🇱
 
-```bash
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Currently I'm working at [Zwijsen](https://zwijsen.nl) as a Senior Frontend Developer.
