@@ -10,10 +10,10 @@ export async function getMdx(source: string) {
     options: {
       parseFrontmatter: true,
       mdxOptions: {
-        rehypePlugins: [rehypeHighlight, rehypeSlug],
+        rehypePlugins: [rehypeSlug, rehypeHighlight as any],
         remarkPlugins: [remarkGfm],
       },
     },
-    components: ComponentsConfig as any,
+    components: ComponentsConfig,
   });
 }
