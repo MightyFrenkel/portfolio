@@ -32,17 +32,17 @@ export default async function Page({ params }: { params: { slug: string } }) {
                   <h3 className="text-white text-xl font-bold mb-4">
                     Table of contents
                   </h3>
-                  <ul className="list-disc list-inside">
-                    <li>
-                      <a href="#first">First section</a>
-                    </li>
-                    <li>
-                      <a href="#second">Second section</a>
-                    </li>
-                    <li>
-                      <a href="#third">Third section</a>
-                    </li>
-                  </ul>
+                  {/* <ul className="list-disc list-inside"> */}
+                  {/*   <li> */}
+                  {/*     <a href="#first">First section</a> */}
+                  {/*   </li> */}
+                  {/*   <li> */}
+                  {/*     <a href="#second">Second section</a> */}
+                  {/*   </li> */}
+                  {/*   <li> */}
+                  {/*     <a href="#third">Third section</a> */}
+                  {/*   </li> */}
+                  {/* </ul> */}
                 </div>
               </div>
             </aside>
