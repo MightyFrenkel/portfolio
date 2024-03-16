@@ -21,9 +21,9 @@ export default function RootLayout({
         <SandPackCSS />
 
         <script
-          async
-          data-id="101423665"
-          src="//static.getclicky.com/js"
+          defer
+          src="https://eu.umami.is/script.js"
+          data-website-id="fafdf776-214a-486e-9e11-646a829c8be3"
         ></script>
       </head>
       <body className={`${roboto.className} min-h-screen flex flex-col`}>
