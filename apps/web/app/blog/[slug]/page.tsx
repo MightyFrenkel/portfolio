@@ -23,29 +23,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
       <Section spacing="none">
         <Section.Background>
           <div className="flex">
-            <article className="prose prose-lg prose-table:table-fixed prose-invert max-w-none w-full md:w-2/3">
+            <article className="prose prose-lg prose-table:table-fixed prose-invert max-w-none w-full ">
               {elements}
             </article>
-            <aside className="hidden md:block w-1/3 ml-8">
-              <div className="sticky top-0">
-                <div className="bg-violet-700/50 backdrop-blur-md rounded-lg p-4">
-                  <h3 className="text-white text-xl font-bold mb-4">
-                    Table of contents
-                  </h3>
-                  {/* <ul className="list-disc list-inside"> */}
-                  {/*   <li> */}
-                  {/*     <a href="#first">First section</a> */}
-                  {/*   </li> */}
-                  {/*   <li> */}
-                  {/*     <a href="#second">Second section</a> */}
-                  {/*   </li> */}
-                  {/*   <li> */}
-                  {/*     <a href="#third">Third section</a> */}
-                  {/*   </li> */}
-                  {/* </ul> */}
-                </div>
-              </div>
-            </aside>
           </div>
         </Section.Background>
       </Section>

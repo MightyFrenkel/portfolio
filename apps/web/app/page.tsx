@@ -10,11 +10,6 @@ export default async function Home() {
       <Section>
         <Text tag="h2">Hi, I&apos;m a developer :)</Text>
         <br />
-        <Text tag="p">
-          Consider this website a work in progress, but feel free to have a look
-          around while I am working on it!
-        </Text>
-        <br />
         <Text tag="p">- Frank</Text>
       </Section>
       <Section spacing="none">
