@@ -9,7 +9,7 @@ In software development, SOLID principles are a set of five design principles th
 
 ## Introduction to SOLID Principles
 SOLID is an acronym that stands for:
-- S - Single Responsibility Principle (SPR)
+- S - Single Responsibility Principle (SRP)
 - O - Open/Closed Principle
 - L - Liskov Substitution Principle
 - I - Interface Segregation Principle
@@ -17,7 +17,7 @@ SOLID is an acronym that stands for:
 
 In this blog post, we will focus on the **Single Responsibility Principle (SRP)** and demonstrate how to refactor a simple React component to adhere to this principle.
 
-## Understanding the Single Responsibility Principle (SPR)
+## Understanding the Single Responsibility Principle (SRP)
 
 The Single Responsibility Principle states that a class should have only one reason to change. In the context of React components, this means that each component should have a single responsibility or task that it is responsible for. By dividing the functionality into smaller, more focused units, we can improve code readability, reusability, and maintainability.
 
