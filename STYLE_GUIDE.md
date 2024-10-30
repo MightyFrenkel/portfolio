@@ -161,7 +161,3 @@ Always use named exports over default exports. Named exports are more explicit a
 
 <https://mkosir.github.io/typescript-style-guide/>
 <https://github.com/tigerbeetle/tigerbeetle/blob/main/docs/TIGER_STYLE.md_"code>
-
-```
-
-```
