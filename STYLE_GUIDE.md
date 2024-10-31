@@ -54,6 +54,8 @@ together, so that the whole is greater than the sum of its parts.
 
 Inform and delight the reader, because your commit messages are being read.
 
+Git commit message should follow the git commit conventions: <https://www.conventionalcommits.org/en/v1.0.0/>
+
 ### Reduce comments you write for your code to a minimum
 
 Maximize code documentation. Code that contains comments usually is a red flag for bad code. When your code needs explanation, this means it is probably to complicated. Comments also get outdated quickly. It is easy to forget to update the comment when changing the code. This way comments get outdated quickly as well.
@@ -73,7 +75,55 @@ if (birdFitsInLetterbox)
 
 The best time to solve performance, to get the huge 1000x wins, is in the design phase, which is precisely when we can't measure or profile. It's also typically harder to fix a system after implementation and profiling, and the gains are less.
 
+### Prevent premature optimization
+
+Although performance is important, it is not the most important thing. First make sure your code is correct and easy to read. Only then start optimizing your code. This way you can be sure that you are not optimizing code that will be thrown away later.
+
 ## Typescript specific rules
+
+### Naming conventions
+
+**locals**
+camelCase
+items, itemsFiltered, itemsFilteredSorted
+
+**Booleans**
+Prefix with is, has, can, should etc.
+isDone, hasError, canSubmit, shouldRender
+
+**Constants**
+Capitalized
+PI, MAX_LENGTH, MAX_WIDTH
+
+**Functions**
+Camel Case
+filteredItems, getFilteredItems
+
+**Types**
+PascalCase
+OrderStatus, User, Item
+
+**React Components**
+Pascal case
+ProductItem, ProductsPage
+
+**Prop Types**
+React component name following "Props" postfix
+[ComponentName]Props - ProductItemProps, ProductsPageProps
+
+**Callback Props**
+Event handler (callback) props are prefixed as on*- e.g. onClick.
+Event handler implementation functions are prefixed as handle* - e.g. handleClick (eslint rule).
+
+```tsx
+// ❌ Avoid inconsistent callback prop naming
+<Button click={actionClick} />
+<MyComponent userSelectedOccurred={triggerUser} />
+
+// ✅ Use prop prefix 'on*' and handler prefix 'handle*'
+<Button onClick={handleClick} />
+<MyComponent onUserSelected={handleUserSelected} />
+```
 
 ### Type Inference
 
